@@ -1,0 +1,151 @@
+.home {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: var(--selected-theme-main-color);
+      margin: 0px;
+      font-weight: 400;
+      font-size: 8rem;
+      line-height: 10rem;
+      font-family: "Inconsolata", Consolas, monospace;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typingEffect 2.5s steps(30, end);
+    }
+  }
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+
+    &__buttons-wrapper {
+      display: flex;
+      gap: 10px;
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 2rem;
+        background: transparent;
+        color: var(--selected-theme-main-color);
+        border: 1.5px solid var(--selected-theme-main-color);
+        border-radius: 4px;
+        font-weight: 500;
+        &:hover {
+          color: #000000;
+          background-color: var(--selected-theme-main-color);
+        }
+      }
+    }
+
+    &__socials-wrapper {
+      display: flex;
+      gap: 10px;
+      position: relative;
+
+      a {
+        .tooltip-text-left,
+        .tooltip-text-right {
+          visibility: hidden;
+          width: 120px;
+          color: var(--selected-theme-background-color);
+          background-color: var(--selected-theme-main-color);
+          border-radius: 6px;
+          font-size: 12px;
+          text-align: center;
+          padding: 5px 0;
+          position: absolute;
+          top: 5px;
+        }
+        .tooltip-text-left {
+          right: 105%;
+          &::after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 100%; /* To the left of the tooltip */
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent
+              var(--selected-theme-main-color);
+          }
+        }
+        .tooltip-text-right {
+          left: 105%;
+          &::after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            right: 100%; /* To the left of the tooltip */
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent var(--selected-theme-main-color)
+              transparent transparent;
+          }
+        }
+      }
+
+      a:hover .tooltip-text-left {
+        visibility: visible;
+      }
+      a:hover .tooltip-text-right {
+        visibility: visible;
+      }
+
+      svg {
+        color: var(--selected-theme-main-color);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .home__text-wrapper h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  .home .contact-me {
+    &__buttons-wrapper {
+      a {
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .home__text-wrapper h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .home__text-wrapper h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
+
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -65,7 +65,7 @@
           .inputEmail:focus,
           .inputDescription:focus {
             outline: none;
-            background-color: transparent;
+            background: transparent;
           }
           // when input is in focus, target label and make change
           .inputName:focus + .nameLabel,

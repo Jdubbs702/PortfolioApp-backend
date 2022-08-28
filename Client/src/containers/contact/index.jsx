@@ -26,7 +26,6 @@ const Contact = () => {
       console.log(error);
     }
   };
-  console.log(inputName);
 
   return (
     <>

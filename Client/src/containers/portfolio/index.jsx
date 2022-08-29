@@ -9,7 +9,6 @@ import ErrorModal from "../../components/ErrorModal";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 
 const Portfolio = () => {
-  const [scrollValue, setScrollValue] = useState();
   const [projectIndex, setProjectIndex] = useState("p1");
   const [deviceType, setDeviceType] = useState("desktop");
   const [filterValue, setFilterValue] = useState("1");
@@ -33,7 +32,6 @@ const Portfolio = () => {
   };
 
   const highlightCard = () => {
-    setScrollValue(window.scrollY);
     if ((window.scrollY >= 0) & (window.scrollY <= 200)) {
       setProjectIndex("p1");
     } else if ((window.scrollY >= 400) & (window.scrollY < 700)) {
@@ -69,8 +67,6 @@ const Portfolio = () => {
     setFilterValue(optionId);
   };
 
-  console.log(deviceType);
-  console.log(window.scrollY);
   return (
     <>
       <ErrorModal nobackdrop={false} error={error} onClear={clearError} />

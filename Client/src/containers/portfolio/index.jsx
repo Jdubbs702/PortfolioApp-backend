@@ -93,8 +93,16 @@ const Portfolio = () => {
           <div className="portfolio__content__cards">
             {filteredPortfolioData.map((item, key) => (
               <div
-                onMouseEnter={() => setHoveredIndex(key)}
-                onMouseLeave={() => setHoveredIndex(null)}
+                onMouseEnter={
+                  deviceType !== "mobile"
+                    ? () => setHoveredIndex(key)
+                    : () => {}
+                }
+                onMouseLeave={
+                  deviceType !== "mobile"
+                    ? () => setHoveredIndex(null)
+                    : () => {}
+                }
                 key={key}
                 className="portfolio__content__cards__item"
               >

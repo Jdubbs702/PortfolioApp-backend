@@ -9,12 +9,47 @@ import ErrorModal from "../../components/ErrorModal";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 
 const Portfolio = () => {
+  const [scrollValue, setScrollValue] = useState();
+  const [projectIndex, setProjectIndex] = useState("p1");
+  const [deviceType, setDeviceType] = useState("desktop");
   const [filterValue, setFilterValue] = useState("1");
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [filteredPortfolioData, setFilteredPortfolioData] = useState([]);
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
 
+  const getDeviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+      return "tablet";
+    }
+    if (
+      /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+        ua
+      )
+    ) {
+      return "mobile";
+    }
+    return "desktop";
+  };
+
+  const highlightCard = () => {
+    setScrollValue(window.scrollY);
+    if ((window.scrollY >= 0) & (window.scrollY <= 200)) {
+      setProjectIndex("p1");
+    } else if ((window.scrollY >= 400) & (window.scrollY < 700)) {
+      setProjectIndex("p2");
+    } else if ((window.scrollY >= 700) & (window.scrollY < 1100)) {
+      setProjectIndex("p3");
+    } else if (window.scrollY >= 1100) {
+      setProjectIndex("p4");
+    }
+  };
+
+  window.addEventListener("scroll", highlightCard);
+
   useEffect(() => {
+    setDeviceType(getDeviceType());
+
     const fetchData = async () => {
       try {
         const response = await sendRequest("/project");
@@ -34,6 +69,8 @@ const Portfolio = () => {
     setFilterValue(optionId);
   };
 
+  console.log(deviceType);
+  console.log(window.scrollY);
   return (
     <>
       <ErrorModal nobackdrop={false} error={error} onClear={clearError} />
@@ -80,11 +117,25 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="overlay">
-                    {hoveredIndex === key && (
+                  <div
+                    className={
+                      (deviceType !== "desktop") & (item.index === projectIndex)
+                        ? `overlay mobile ${item.index === "p1" && "p1"}`
+                        : "overlay"
+                    }
+                  >
+                    {(hoveredIndex === key ||
+                      (deviceType !== "desktop") &
+                        (item.index === projectIndex)) && (
                       <div className="overlay__content">
-                        <p>{item.projectName}</p>
-                        <div className="overlay__content__description">
+                        <p className={`${item.index === "p1" && "p1"}`}>
+                          {item.projectName}
+                        </p>
+                        <div
+                          className={`overlay__content__description ${
+                            item.index === "p1" && "p1"
+                          }`}
+                        >
                           {item.description}
                         </div>
                         <button>Visit</button>

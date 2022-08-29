@@ -76,6 +76,10 @@
           transition: 0.5s;
           background-color: var(--selected-theme-main-color);
 
+          &.mobile {
+            opacity: 1;
+          }
+
           &__content {
             position: absolute;
             top: 50%;
@@ -145,6 +149,15 @@
   }
   .portfolio__content__cards {
     grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+
+    &__item {
+      border: 1px solid var(--selected-theme-main-color);
+
+      &:last-child {
+        margin-bottom: 125px;
+      }
+    }
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {

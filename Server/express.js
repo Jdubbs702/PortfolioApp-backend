@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    // origin: "http://localhost:3000",
-    origin: "https://portfolioapp-c45d1.web.app",
+    origin: "http://localhost:3000",
+    // origin: "https://portfolioapp-c45d1.web.app",
   })
 );
 app.use(bodyParser.json());

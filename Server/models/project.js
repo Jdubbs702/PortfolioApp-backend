@@ -5,6 +5,7 @@ const projectSchema = new mongoose.Schema({
   description: { type: String },
   projectLink: { type: String },
   image: { type: String },
+  index: { type: String },
 });
 
 module.exports = mongoose.model("Project", projectSchema);

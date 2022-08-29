@@ -9,7 +9,7 @@ import ErrorModal from "../../components/ErrorModal";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 
 const Portfolio = () => {
-  const [projectIndex, setProjectIndex] = useState("p1");
+  const [projectIndex, setProjectIndex] = useState(null);
   const [deviceType, setDeviceType] = useState("desktop");
   const [filterValue, setFilterValue] = useState("1");
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -32,7 +32,7 @@ const Portfolio = () => {
   };
 
   const highlightCard = () => {
-    if ((window.scrollY >= 0) & (window.scrollY <= 200)) {
+    if ((window.scrollY > 0) & (window.scrollY <= 200)) {
       setProjectIndex("p1");
     } else if ((window.scrollY >= 400) & (window.scrollY < 700)) {
       setProjectIndex("p2");

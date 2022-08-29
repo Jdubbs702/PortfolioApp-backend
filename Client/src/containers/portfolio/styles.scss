@@ -42,10 +42,6 @@
         cursor: pointer;
         position: relative;
 
-        &:hover .overlay {
-          opacity: 1;
-        }
-
         &__img-wrapper {
           height: 100%;
 
@@ -140,6 +136,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (hover: hover) {
+  .portfolio__content__cards__item {
+    &:hover .overlay {
+      opacity: 1;
+    }
   }
 }
 

@@ -25,6 +25,7 @@
       }
 
       ul > li {
+        list-style: none;
         line-height: 1rem;
         margin-bottom: 15px;
 
@@ -98,7 +99,10 @@
 }
 
 @keyframes rotation {
-  100% {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
     transform: rotate(360deg);
   }
 }

@@ -18,7 +18,7 @@ const About = () => {
         <div className="about__content__personalWrapper">
           <Animate
             play
-            duration={1}
+            duration={2}
             delay={0}
             start={{ transform: "translateX(-800px)" }}
             end={{ transform: "translateX(0px)" }}
@@ -53,7 +53,7 @@ const About = () => {
           </Animate>
           <Animate
             play
-            duration={1}
+            duration={2}
             delay={0}
             start={{ transform: "translateX(500px)" }}
             end={{ transform: "translateX(0px)" }}
@@ -73,9 +73,9 @@ const About = () => {
         <div className="about__content__servicesWrapper">
           <Animate
             play
-            duration={1}
+            duration={2}
             delay={0}
-            start={{ transform: "translateY(-800px)" }}
+            start={{ transform: "translateY(-1800px)" }}
             end={{ transform: "translateY(0px)" }}
           >
             <div className="about__content__servicesWrapper__innerContent">

@@ -32,14 +32,30 @@ const Portfolio = () => {
   };
 
   const highlightCard = () => {
-    if ((window.scrollY > 0) & (window.scrollY <= 200)) {
-      setProjectIndex("p1");
-    } else if ((window.scrollY >= 400) & (window.scrollY < 700)) {
-      setProjectIndex("p2");
-    } else if ((window.scrollY >= 700) & (window.scrollY < 1100)) {
-      setProjectIndex("p3");
-    } else if (window.scrollY >= 1100) {
-      setProjectIndex("p4");
+    if (filterValue === "1") {
+      if ((window.scrollY > 0) & (window.scrollY <= 220)) {
+        setProjectIndex("p1");
+      } else if ((window.scrollY >= 280) & (window.scrollY < 700)) {
+        setProjectIndex("p2");
+      } else if ((window.scrollY >= 700) & (window.scrollY < 1100)) {
+        setProjectIndex("p3");
+      } else if (window.scrollY >= 1100) {
+        setProjectIndex("p4");
+      }
+    }
+    if (filterValue === "2") {
+      if ((window.scrollY > 0) & (window.scrollY <= 220)) {
+        setProjectIndex("p2");
+      } else if ((window.scrollY >= 280) & (window.scrollY < 700)) {
+        setProjectIndex("p3");
+      } else if ((window.scrollY >= 700) & (window.scrollY < 1100)) {
+        setProjectIndex("p4");
+      }
+    }
+    if (filterValue === "3") {
+      if ((window.scrollY > 0) & (window.scrollY <= 220)) {
+        setProjectIndex("p1");
+      }
     }
   };
 
@@ -64,6 +80,7 @@ const Portfolio = () => {
   }, [filterValue]);
 
   const handleFilterClick = (optionId) => {
+    setProjectIndex(null);
     setFilterValue(optionId);
   };
 
@@ -124,7 +141,7 @@ const Portfolio = () => {
                   <div
                     className={
                       (deviceType !== "desktop") & (item.index === projectIndex)
-                        ? `overlay mobile ${item.index === "p1" && "p1"}`
+                        ? "overlay mobile"
                         : "overlay"
                     }
                   >
@@ -132,14 +149,8 @@ const Portfolio = () => {
                       (deviceType !== "desktop") &
                         (item.index === projectIndex)) && (
                       <div className="overlay__content">
-                        <p className={`${item.index === "p1" && "p1"}`}>
-                          {item.projectName}
-                        </p>
-                        <div
-                          className={`overlay__content__description ${
-                            item.index === "p1" && "p1"
-                          }`}
-                        >
+                        <p>{item.projectName}</p>
+                        <div className="overlay__content__description">
                           {item.description}
                         </div>
                         <button>Visit</button>

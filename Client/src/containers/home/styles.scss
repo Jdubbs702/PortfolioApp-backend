@@ -6,12 +6,15 @@
   align-items: center;
   justify-content: center;
 
-  &__text-wrapper {
+  &__intro-wrapper,
+  &__title-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    h1 {
+    &__intro,
+    &__title {
       color: var(--selected-theme-main-color);
       margin: 0px;
       font-weight: 400;
@@ -21,7 +24,17 @@
       position: relative;
       overflow: hidden;
       white-space: nowrap;
-      animation: typingEffect 2.5s steps(30, end);
+    }
+
+    &__intro {
+      margin-left: -17%;
+      animation: typingEffect 2s steps(30, end);
+    }
+
+    &__title {
+      animation: typingEffect 2s steps(30, end);
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
     }
   }
   .contact-me {
@@ -115,8 +128,18 @@
   }
 }
 
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 550px) {
-  .home__text-wrapper h1 {
+  .home__intro-wrapper h1,
+  .home__title-wrapper h1 {
     font-size: 3rem;
     line-height: 5rem;
   }
@@ -129,23 +152,15 @@
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 768px) {
-  .home__text-wrapper h1 {
+  .home__intro-wrapper h1,
+  .home__title-wrapper h1 {
     font-size: 4rem;
     line-height: 6rem;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 990px) {
-  .home__text-wrapper h1 {
+  .home__intro-wrapper h1 {
     font-size: 6rem;
     line-height: 8rem;
-  }
-}
-
-@keyframes typingEffect {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
   }
 }

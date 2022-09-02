@@ -8,17 +8,16 @@ import JeremyLeopold_CV from "./JeremyLeopold_CV.pdf";
 const Home = () => {
   return (
     <section className="home" id="home">
-      <div className="home__text-wrapper">
-        <h1>
-          Hello, I'm Jeremy
-          <br />
-          Full Stack Developer
-        </h1>
+      <div className="home__intro-wrapper">
+        <h1 className="home__intro-wrapper__intro">Hello, I'm Jeremy</h1>
+      </div>
+      <div className="home__title-wrapper">
+        <h1 className="home__title-wrapper__title">Full Stack Developer</h1>
       </div>
       <Animate
         play
-        duration={1.5}
-        delay={1}
+        duration={2}
+        delay={2}
         start={{
           transform: "translateY(600px)",
         }}

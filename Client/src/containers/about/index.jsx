@@ -24,16 +24,19 @@ const About = () => {
             end={{ transform: "translateX(0px)" }}
           >
             <h3 className="developerContent">Full Stack Developer</h3>
-            <ul>
+            <ul className="bulleted">
               <li>
                 Excelled in ITC student engagement project, gaining insite into
                 company dynamics and workflow
-                <br /> Learned onboarding, task management, coding standards
+                <span>
+                  {" "}
+                  Learned onboarding, task management, coding standards{" "}
+                </span>
               </li>
               <li>
                 Built multiple apps using Javascript, Python, SQL, React,
                 NodeJs, and MongoDB
-                <br /> Built micro-frontend with React and Typescript
+                <span> Built micro-frontend with React and Typescript </span>
               </li>
               <li>Graduated Harvard CS50x</li>
               <li>Graduated ITC Full Stack Development</li>
@@ -46,15 +49,16 @@ const About = () => {
                 Passionate about learning new technologies and developing myself
                 and my abilities
               </li>
-              <br />
-              <br />
+            </ul>
+
+            <p>
               About me personally:
               <br /> My family and I made Aliyah to Israel from Las Vegas. In my
               previous career as an electrical contractor, I taught myself many
               new skills including business management, project managment, and
               project estimating. My passions outside coding include singing and
               playing guitar and jamming with friends.
-            </ul>
+            </p>
           </Animate>
           <Animate
             play

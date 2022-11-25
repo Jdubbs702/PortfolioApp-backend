@@ -16,9 +16,24 @@
       h3.personalContent {
         padding-top: 20px;
       }
+
+      .bulleted {
+        left: 15px;
+        position: relative;
+        margin: 25px 0px 40px 0px;
+      }
+
+      .bulleted > li {
+        color: var(--selected-theme-sub-text-color);
+        font-size: 16px;
+        list-style-type: square;
+        margin-bottom: 20px;
+        line-height: 1.1;
+      }
+
       p {
         color: var(--selected-theme-sub-text-color);
-        font-size: 1.8rem;
+        font-size: 16px;
         line-height: 1.65;
         padding-bottom: 20px;
         border-bottom: 1px dashed var(--selected-theme-main-color);

@@ -22,11 +22,27 @@ const skillsData = [
         skillName: "TYPESCRIPT",
         percentage: "40",
       },
+      {
+        skillName: "FIREBASE",
+        percentage: "70",
+      },
     ],
   },
   {
     label: "BACK END",
     data: [
+      {
+        skillName: "Flask (Python Framework)",
+        percentage: "75",
+      },
+      {
+        skillName: "SQL",
+        percentage: "90",
+      },
+      {
+        skillName: "MYSQL",
+        percentage: "80",
+      },
       {
         skillName: "NODE JS",
         percentage: "80",
@@ -44,10 +60,6 @@ const skillsData = [
         percentage: "80",
       },
       {
-        skillName: "SQL",
-        percentage: "70",
-      },
-      {
         skillName: "FIREBASE",
         percentage: "70",
       },
@@ -57,19 +69,23 @@ const skillsData = [
     label: "RELATED SKILLS",
     data: [
       {
-        skillName: "REST APIs",
-        percentage: "70",
+        skillName: "Python",
+        percentage: "75",
       },
       {
         skillName: "GIT",
         percentage: "60",
       },
       {
-        skillName: "DATA MODELING",
-        percentage: "70",
+        skillName: "REST APIs",
+        percentage: "75",
       },
       {
-        skillName: "MYSQL",
+        skillName: "C",
+        percentage: "80",
+      },
+      {
+        skillName: "DATA MODELING",
         percentage: "70",
       },
       {

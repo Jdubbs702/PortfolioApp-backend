@@ -3,7 +3,7 @@ import { Animate } from "react-simple-animate";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
-import JeremyLeopold_CV from "./JeremyLeopold_CV.pdf";
+import JeremyLeopold_CV from "./Jeremy_Leopold_CV.pdf";
 
 const Home = () => {
   return (

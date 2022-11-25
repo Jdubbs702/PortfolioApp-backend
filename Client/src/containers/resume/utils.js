@@ -24,6 +24,13 @@ const resumeData = {
   ],
   accreditations: [
     {
+      title: "CS50 Certification",
+      subTitle: "Harvard's CS50 Course, Online",
+      description:
+        "Challenging 12-week computer science course focused on algorithms, data structures, and object oriented programming. Covers cyber-security and programming methods in C, Python, SQL, HTML, CSS, Javascript, and Flask",
+      date: "09/2022 - 12/2022",
+    },
+    {
       title: "Full Stack Development Certification",
       subTitle: "Israel Tech Challenge, Tel Aviv",
       description:

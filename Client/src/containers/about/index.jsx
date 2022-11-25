@@ -28,15 +28,12 @@ const About = () => {
               <li>
                 Excelled in ITC student engagement project, gaining insite into
                 company dynamics and workflow
-                <span>
-                  {" "}
-                  Learned onboarding, task management, coding standards{" "}
-                </span>
+                <br /> Learned onboarding, task management, and coding standards
               </li>
               <li>
                 Built multiple apps using Javascript, Python, SQL, React,
                 NodeJs, and MongoDB
-                <span> Built micro-frontend with React and Typescript </span>
+                <br /> Built micro-frontend with React and Typescript
               </li>
               <li>Graduated Harvard CS50x</li>
               <li>Graduated ITC Full Stack Development</li>

@@ -26,13 +26,21 @@ const About = () => {
             <h3 className="developerContent">Full Stack Developer</h3>
             <ul className="bulleted">
               <li>
+                Developing a ReactJS web app for maintaining membership and access at a
+                private swimming pool facility in Ein Vered, Israel 
+              </li>
+              <li>
+                Extending and maintaining WordPress website at Ben Hahadarim middle
+                school: https://www.yaridmada.co.il
+              </li>
+              <li>
                 Excelled in ITC student engagement project, gaining insite into
                 company dynamics and workflow
                 <br /> Learned onboarding, task management, and coding standards
               </li>
               <li>
                 Built multiple apps using Javascript, Python, SQL, React,
-                NodeJs, and MongoDB
+                NodeJs, MongoDB, AWS Elastic Beanstalk, and AWS RDS
                 <br /> Built micro-frontend with React and Typescript
               </li>
               <li>Graduated Harvard CS50x</li>

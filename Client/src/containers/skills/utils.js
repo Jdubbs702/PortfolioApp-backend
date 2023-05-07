@@ -1,13 +1,9 @@
 const skillsData = [
   {
-    label: "FRONT END",
+    label: "PROGRAMMING LANGUAGES",
     data: [
       {
-        skillName: "HTML",
-        percentage: "90",
-      },
-      {
-        skillName: "CSS",
+        skillName: "PYTHON",
         percentage: "80",
       },
       {
@@ -15,7 +11,7 @@ const skillsData = [
         percentage: "80",
       },
       {
-        skillName: "REACTJS",
+        skillName: "SQL",
         percentage: "80",
       },
       {
@@ -23,28 +19,28 @@ const skillsData = [
         percentage: "40",
       },
       {
-        skillName: "FIREBASE",
+        skillName: "C (program language)",
         percentage: "70",
+      },
+      {
+        skillName: "SCSS",
+        percentage: "80",
+      },
+      {
+        skillName: "HTML5",
+        percentage: "90",
       },
     ],
   },
   {
-    label: "BACK END",
+    label: "FRAMEWORKS",
     data: [
       {
-        skillName: "Flask (Python Framework)",
-        percentage: "75",
-      },
-      {
-        skillName: "SQL",
-        percentage: "90",
-      },
-      {
-        skillName: "MYSQL",
+        skillName: "REACTJS",
         percentage: "80",
       },
       {
-        skillName: "NODE JS",
+        skillName: "NODE.JS",
         percentage: "80",
       },
       {
@@ -52,37 +48,67 @@ const skillsData = [
         percentage: "80",
       },
       {
-        skillName: "MONGOOSE",
+        skillName: "Flask (Python Framework)",
+        percentage: "75",
+      },
+      {
+        skillName: "POWER BI",
+        percentage: "60",
+      },
+    ],
+  },
+  {
+    label: "DATABASES",
+    data: [
+      {
+        skillName: "AWS RDS (MYSQL)",
         percentage: "80",
       },
       {
-        skillName: "MONGO DB",
+        skillName: "MONGO.DB",
         percentage: "80",
-      },
+      },     
       {
-        skillName: "FIREBASE",
+        skillName: "SQLITE",
         percentage: "70",
       },
     ],
   },
   {
-    label: "RELATED SKILLS",
+    label: "CLOUD APPLICATION PLATFORMS",
     data: [
       {
-        skillName: "Python",
-        percentage: "75",
+        skillName: "AWS Elastic Beanstalk,",
+        percentage: "60",
+      },
+      {
+        skillName: "FIREBASE",
+        percentage: "70",
+      },
+      {
+        skillName: "HEROKU",
+        percentage: "60",
+      }
+    ],
+  },
+  {
+    label: "OTHER TOOLS AND TECHNOLOGIES",
+    data: [
+      {
+        skillName: "DOCKER",
+        percentage: "50",
       },
       {
         skillName: "GIT",
+        percentage: "75",
+      },
+      {
+        skillName: "JIRA",
         percentage: "60",
       },
       {
         skillName: "REST APIs",
         percentage: "75",
-      },
-      {
-        skillName: "C",
-        percentage: "80",
       },
       {
         skillName: "DATA MODELING",

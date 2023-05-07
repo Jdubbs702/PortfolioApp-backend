@@ -77,6 +77,7 @@ const Portfolio = () => {
       }
     };
     fetchData();
+  // eslint-disable-next-line
   }, [filterValue]);
 
   const handleFilterClick = (optionId) => {

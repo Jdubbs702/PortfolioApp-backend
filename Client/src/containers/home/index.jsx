@@ -3,7 +3,7 @@ import { Animate } from "react-simple-animate";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
-import JeremyLeopold_CV from "./Jeremy_Leopold_CV.pdf";
+import Leopold_Jeremy_RCV from "./Leopold_Jeremy_RCV.pdf";
 
 const Home = () => {
   return (
@@ -28,7 +28,7 @@ const Home = () => {
         <div className="contact-me">
           <div className="contact-me__buttons-wrapper">
             <Link to="/contact">Hire Me</Link>
-            <a href={JeremyLeopold_CV} download="JeremyLeopold_CV">
+            <a href={Leopold_Jeremy_RCV} download="Leopold_Jeremy_RCV">
               Download Resume
             </a>
           </div>

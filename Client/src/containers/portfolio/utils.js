@@ -4,11 +4,11 @@ export const filterOptions = [
     id: "1",
   },
   {
-    label: "ITC Bootcamp",
+    label: "NodeJS / MongoDB / React",
     id: "2",
   },
   {
-    label: "Personal",
+    label: "Python / SQL / Flask",
     id: "3",
   },
 ];

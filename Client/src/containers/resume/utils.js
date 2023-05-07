@@ -1,6 +1,13 @@
 const resumeData = {
   experience: [
     {
+      title: "FS Developer",
+      subTitle: "Shirutei Leopold, Kadima-Tzoran",
+      description:
+        "Developing a ReactJS web app for maintaining membership and access at a private swimming pool facility in Ein Vered, Israel. Extending and maintaining WordPress website at Ben Hahadarim middle school.",
+      date: "09/2022 - 08/2022",
+    },
+    {
       title: "Junior FS Developer (Project Intern)",
       subTitle: "Zencity, Tel Aviv",
       description:

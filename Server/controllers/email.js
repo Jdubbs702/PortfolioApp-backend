@@ -30,6 +30,7 @@ const sendMeInquirerEmail = async (req, res, next) => {
   } catch (err) {
     return next(new HttpError("A problem ocurred", 503));
   }
+  res.header('Access-Control-Allow-Origin', '*');
   res.json({ message: "Email sent to Jeremy successfully" });
 };
 

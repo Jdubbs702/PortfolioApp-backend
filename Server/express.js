@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
-    // origin: "http://jeremyleopold.ap-northeast-1.elasticbeanstalk.com",
+    // origin: "http://localhost:3000",
+    origin: "http://jeremyleopold.ap-northeast-1.elasticbeanstalk.com",
   })
 );
 app.use(bodyParser.json());

@@ -9,13 +9,13 @@ services:
       dockerfile: ./Dockerfile
     image: "portfolio/server"
     ports:
-      - "8081:5000"
+      - "5000:5000"
   frontend:
     env_file:
-        "./Client/.env"
+        "./Client/.env.production"
     build:
       context: ./Client
       dockerfile: ./Dockerfile
     image: "portfolio/client"
     ports:
-      - "8080:3000"
+      - "3000:3000"

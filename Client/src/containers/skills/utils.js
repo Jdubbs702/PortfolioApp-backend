@@ -75,7 +75,7 @@ const skillsData = [
     ],
   },
   {
-    label: "CLOUD PLATFORMS",
+    label: "PLATFORMS",
     data: [
       {
         skillName: "AWS Elastic Beanstalk,",

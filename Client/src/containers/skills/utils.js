@@ -1,6 +1,6 @@
 const skillsData = [
   {
-    label: "PROGRAMMING LANGUAGES",
+    label: "LANGUAGES",
     data: [
       {
         skillName: "PYTHON",
@@ -75,7 +75,7 @@ const skillsData = [
     ],
   },
   {
-    label: "CLOUD APPLICATION PLATFORMS",
+    label: "CLOUD PLATFORMS",
     data: [
       {
         skillName: "AWS Elastic Beanstalk,",
@@ -92,7 +92,7 @@ const skillsData = [
     ],
   },
   {
-    label: "OTHER TOOLS AND TECHNOLOGIES",
+    label: "OTHER TOOLS",
     data: [
       {
         skillName: "DOCKER",

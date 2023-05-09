@@ -51,10 +51,6 @@ const skillsData = [
         skillName: "Flask (Python Framework)",
         percentage: "75",
       },
-      {
-        skillName: "POWER BI",
-        percentage: "60",
-      },
     ],
   },
   {
@@ -78,7 +74,7 @@ const skillsData = [
     label: "PLATFORMS",
     data: [
       {
-        skillName: "AWS Elastic Beanstalk,",
+        skillName: "AWS Elastic Beanstalk",
         percentage: "60",
       },
       {

@@ -1,3 +1,0 @@
-# Ignore client and server node_modules folders
-./Client/node_modules
-./Server/node_modules

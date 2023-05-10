@@ -9,15 +9,15 @@ services:
       dockerfile: ./Dockerfile
     image: "portfolio/server"
     ports:
-      - "8081:5000"
+      - "5000:5000"
     mem_limit: 2g
   frontend:
     env_file:
-        "./Client/.env.production"
+        "./Client/.env"
     build:
       context: ./Client
       dockerfile: ./Dockerfile
     image: "portfolio/client"
     ports:
-      - "8080:3000"
+      - "3000:3000"
     mem_limit: 2g

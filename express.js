@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 // origins
 app.use(
   cors({
-    origin: ["http://127.0.0.1:3000", "http://jeremyleopold.ap-northeast-1.elasticbeanstalk.com"],
+    origin: ["http://127.0.0.1:3000", "https://portfolio-freelance-46851.web.app"],
   })
 );
 

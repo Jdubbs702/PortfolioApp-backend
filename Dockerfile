@@ -3,6 +3,7 @@ FROM node:16-alpine
 
 WORKDIR /app
 
+# COPY ["pet_portal-backend/package.json", "pet_portal-backend/package-lock.json", "./"]
 COPY ["package.json", "package-lock.json", "./"]
 RUN ls
 RUN npm install

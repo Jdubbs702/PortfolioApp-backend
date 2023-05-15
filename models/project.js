@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
+
 const projectSchema = new mongoose.Schema({
   sectionId: { type: String },
   projectName: { type: String },
@@ -8,4 +9,4 @@ const projectSchema = new mongoose.Schema({
   index: { type: String },
 });
 
-module.exports = mongoose.model("Project", projectSchema);
+module.exports = mongoose.connection.useDb("portfolio", { useCache: true }).model('Project', projectSchema);

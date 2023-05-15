@@ -1,12 +1,11 @@
+const ProjectModel = require("../models/project");
 const HttpError = require("../models/http-error");
-
-const projectSchema = require("../models/project");
 
 //read
 const getProjectData = async (req, res, next) => {
   let projectData;
   try {
-    projectData = await projectSchema.find({});
+    projectData = await ProjectModel.find({});
   } catch (err) {
     return next(new HttpError("Could not find any project", 404));
   }
